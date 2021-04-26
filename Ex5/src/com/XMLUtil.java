@@ -12,7 +12,7 @@ public class XMLUtil {
 			DocumentBuilderFactory dFactory=DocumentBuilderFactory.newInstance();
 			DocumentBuilder builder = dFactory.newDocumentBuilder();
 			Document doc;
-			doc = builder.parse(new File("src/com/config.xml"));
+			doc = builder.parse(new File("Fruit/src/com/config.xml"));
 			//获取包含类名的文本节点
 			NodeList nl = doc.getElementsByTagName("className");
 			Node classNode = nl.item(0).getFirstChild();
