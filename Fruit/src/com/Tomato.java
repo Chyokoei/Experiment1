@@ -2,7 +2,7 @@ package com;
 
 public class Tomato implements Vegetables {
 	public void eat() {
-		System.out.printf("tomato eatting");
+		System.out.println("tomato eatting");
 	}
 
 }

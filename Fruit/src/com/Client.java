@@ -7,7 +7,7 @@ public class Client {
 		try {
 			Fruit fruit;
 			Vegetables vegetables;
-	        AFruitAndVegetables aFruitAndVegetables = new AFruitAndVegetables();
+	        AFruitAndVegetables aFruitAndVegetables;
 	        aFruitAndVegetables = (AFruitAndVegetables)XMLUtil.getBean();
 	        fruit = aFruitAndVegetables.CreateF();
 	        fruit.eat();

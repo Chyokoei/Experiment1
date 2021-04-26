@@ -17,7 +17,7 @@ package com;
 	            //通过工程类new一个DocumentBuilder对象
 	            DocumentBuilder db = df.newDocumentBuilder();
 	            //将XML文件作为file对象读取到代码中
-	            File file = new File("D:/Workspace/Fruit/src/com/config.xml");
+	            File file = new File("D:/Repository/Fruit/src/com/config.xml");
 	            //创建Document对象，并通过DocumentBuilder中的parse方法将XML文件数据流传送到新建的Document对象中
 	            Document doc;
 	            doc = db.parse(file);
@@ -34,7 +34,7 @@ package com;
 	            //创建对象类
 	            Class c = Class.forName(sourceName);
 	            //生成新对象
-	            Object obj = c.newInstance();
+	            Object obj = c.getDeclaredConstructor().newInstance();
 	            //返回类
 	            return obj;
 	        }
